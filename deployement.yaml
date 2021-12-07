@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gradle-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gradle-app
+  template:
+    metadata:
+      labels:
+        app: gradle-app
+
+    spec:
+      containers:
+        - name: gradle-app
+          image: 10.82.1.49:5000/tekton-gradle-test:latest
+          ports:
+            - containerPort: 9000
