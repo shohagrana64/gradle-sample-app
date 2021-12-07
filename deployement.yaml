@@ -16,6 +16,6 @@ spec:
       serviceAccountName: shohag-build-bot
       containers:
         - name: gradle-app
-          image: 10.82.1.49:5000/tekton-gradle-test:latest
+          image: shohagbkash/tekton-gradle-test:latest
           ports:
             - containerPort: 9000
