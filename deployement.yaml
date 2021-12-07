@@ -18,4 +18,4 @@ spec:
         - name: gradle-app
           image: shohagbkash/tekton-gradle-test:latest
           ports:
-            - containerPort: 9000
+            - containerPort: 9090
