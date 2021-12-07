@@ -7,7 +7,7 @@ metadata:
 spec:
   type: NodePort 
   ports:
-    - port: 9090
+    - port: 9000
       nodePort: 32001
   selector:
     app: gradle-app
